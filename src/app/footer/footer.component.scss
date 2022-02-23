@@ -1,0 +1,43 @@
+@import '../../styles.scss';
+
+.footer{
+  padding: 30px 20px 60px 20px;
+  margin-top: 10px;
+  background-color: #fbfbfb;
+  h3{
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 12px;
+    position: relative;
+    span{
+      position: relative;
+      top: 5px;
+    }
+  }
+  ul{
+    width: 31%;
+    padding: 0;
+    list-style: none;
+    @media (min-width: $width1) and (max-width: $width2) {
+      width: 100%;
+     }
+    li{
+      float: left;
+      margin-right: 14px;
+      &:last-child a{
+        border: none;
+      }
+      a{
+        color: #4e4e4e;
+        text-decoration: none;
+        padding-right: 14px;
+        border-right: 1px solid #4e4e4e;
+      }
+    }
+  }
+  p{
+    clear: both;
+    color: #4e4e4e;
+  }
+}

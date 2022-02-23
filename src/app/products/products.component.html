@@ -1,0 +1,22 @@
+<div class="products">
+  <div class="main-cont">
+    <div class="row">
+      <div class="col-md-2 col-4" *ngFor="let pro of Products">
+        <div class="card" style="width: 18rem;">
+          <div class="img-cont">
+            <img [src]="pro.img" class="card-img-top" alt="product">
+            <span class="like"><i class="fa-regular fa-heart"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></span>
+            <span class="distance">{{ pro.distance }}</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title old-price">AED {{ pro.old_price }} /-</h5>
+            <span class="discount">0%Off</span>
+            <h5 class="card-title new-price">AED {{ pro.price }} /-</h5>
+            <p class="card-text">{{ pro.desc }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

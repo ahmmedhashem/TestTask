@@ -1,0 +1,17 @@
+<div class="categories">
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let cate of Categories">
+      <ng-template carouselSlide >
+        <div class="card" style="width: 18rem;">
+          <div class="shape">
+            <i class="fa-brands fa-buffer"></i>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">{{ cate.title }}</h3>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+
+  </owl-carousel-o>
+</div>

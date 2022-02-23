@@ -1,0 +1,195 @@
+@import '../../styles.scss';
+
+.navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: none;
+    background-color: #fbfbfb;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding: 20px 0;
+    }
+    button{
+      @media (min-width: $width1) and (max-width: $width2) {
+        position: relative;
+        top: 12px;
+        padding: 0;
+        border: none;
+      }
+      svg{
+        display: block;
+        margin-bottom: 4px;
+        width: 31px;
+        height: 4px;
+      }
+    }
+    .container-fluid{
+        padding: 0 100px;
+        position: relative;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 0 20px;
+          position: relative;
+          flex-direction: row-reverse;
+        }
+        .navbar-brand{
+            width: 150px;
+
+            @media (min-width: $width1) and (max-width: $width2) {
+              width: 89px;
+              position: relative;
+              left: -48%;
+              top: 8px;
+            }
+            h2{
+                font-size: 30px;
+                color: #000;
+                font-weight: bold;
+                position: relative;
+                span{
+                  position: relative;
+                  top: 6px;
+                }
+            }
+        }
+        .collapse{
+
+            @media (min-width: $width1) and (max-width: $width2) {
+              background: rgb(0,0,0,0.9);
+              padding: 0px 0px 30px 0px;
+              margin-left: 0;
+              border-bottom-left-radius: 20px;
+              border-bottom-right-radius: 20px;
+              margin-top: 20px;
+              text-align: center;
+              position: relative;
+              z-index: 99;
+            }
+            @media (min-width: 1530px) and (max-width: 2000px) {
+
+            }
+            ul{
+              position: relative;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  padding: 0;
+                }
+                li{
+                    margin-right: 70px;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                      margin-right: unset;
+                      padding: 0;
+                      border-bottom: 1px solid #c2f2db;
+                    }
+                    @media (min-width: 1530px) and (max-width: 2000px) {
+                      margin-right: 90px;
+                    }
+                    a{
+                      position: relative;
+                      top: 12px;
+                      svg{
+                        width: 15px;
+                        height: 15px;
+                      }
+                    }
+                    form{
+                      position: relative;
+                      input{
+                        padding: 10px 20px;
+                        border: none;
+                        width: 300px;
+                        background: #fbfbfb;
+                        &::placeholder{
+                          color: #959595;
+                        }
+                      }
+                      button{
+                        position: absolute;
+                        top: 13px;
+                        right: 0;
+                        background-color: unset;
+                        border: none;
+                        svg{
+                          width: 25px;
+                          height: 25px;
+                          color: #959595;
+                        }
+                      }
+                    }
+                    .all-cat{
+                      background-color: #605f5f;
+                      border-radius: 50%;
+                      padding: 5px;
+                      display: flex;
+                      padding: 8px;
+                      position: relative;
+                      top: 12px;
+                      svg{
+                        color: #fbfbfb;
+                        width: 15px;
+                        height: 15px;
+                      }
+                    }
+                    .bag-shooping{
+                      background-color: #f1f1f1;
+                      border-radius: 50%;
+                      padding: 0;
+                      position: relative;
+                      top: 0;
+                        @media (min-width: $width1) and (max-width: $width2) {
+
+                        }
+                        .background{
+                          background-color: #fbfbfb;
+                          border-radius: 50%;
+                          transform: rotateX(32deg);
+                          padding: 14px;
+                          svg{
+                            width: 25px;
+                            height: 25px;
+                          }
+                        }
+                    }
+                    .insta{
+                      background-color: #FFF;
+                      padding: 5px 19px;
+                      position: relative;
+                      top: 10px;
+                      border-radius: 50% / 10%;
+                      text-indent: .1em;
+                      svg{
+                        width: 25px;
+                        height: 25px;
+                        margin-top: 5px;
+                      }
+                    }
+                }
+            }
+            form{
+              @media (min-width: $width1) and (max-width: $width2) {
+                width: 86%;
+                margin: 0 auto;
+                position: relative;
+                display: block!important;
+              }
+              span{
+                font-size: 20px;
+                font-weight: 500;
+
+              }
+              .icon{
+                margin-left: 10px;
+                background-color: #DDD;
+                border-radius: 50%;
+                padding: 5px;
+                display: flex;
+              }
+            }
+        }
+    }
+}
+.show{
+    display: inline-block!important;
+}

@@ -1,0 +1,26 @@
+.slider{
+  background-color: #f3f3f3;
+  height: 600px;
+  .back{
+    background: url('../../assets/img/slaider-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 100%;
+  }
+  .assessment{
+    padding: 18px 0;
+    p{
+      color: #000;
+      float: left;
+    }
+    a{
+      float: right;
+      text-decoration: none;
+      color: #FFF;
+      background-color: yellowgreen;
+      padding: 5px 30px;
+      border-radius: 5px;
+    }
+  }
+}

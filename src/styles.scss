@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+$width1: 300px;
+$width2:    770px;
+$textColor: #FFF;
+
+body{
+  background-color: #f1f1f1;
+}
+
+h2,h3,h4,h5,h6{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+p{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+a,button{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+li{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+span{
+  font-family: Roboto;
+  font-style: normal;
+}
+label,input,select{
+  font-family: Roboto;
+  font-style: normal;
+}
+::placeholder{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+
+
+::placeholder{
+    color: #FFF;
+}
+
+button,input,select{
+    &:hover{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    &:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+}
+
+a{
+    cursor: pointer;
+}
+
+
+.categories{
+  height: 224px;
+  .owl-stage-outer{
+    .owl-item{
+      margin: 1px;
+    }
+    .owl-nav{
+      display: none;
+    }
+  }
+
+}
